@@ -280,7 +280,7 @@
   // --------------------------------------------------------------------
   const growthChartEl = document.querySelector('#growthChart'),
     growthChartOptions = {
-      series: [78],
+      series: [70],
       labels: ['Watt'],
       chart: {
         height: 240,
@@ -312,7 +312,8 @@
               color: headingColor,
               fontSize: '22px',
               fontWeight: '500',
-              fontFamily: 'Public Sans'
+              fontFamily: 'Public Sans',
+              formatter : (val) => val
             }
           }
         }

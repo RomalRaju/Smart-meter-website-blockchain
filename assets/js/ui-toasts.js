@@ -12,6 +12,14 @@
   let selectedType, selectedPlacement, toastPlacement;
 
   // Dispose toast when open another
+  const button = document.getElementById("myButton");
+const selectionBox = document.getElementById("selectionBox");
+
+button.addEventListener("click", () => {
+  selectionBox.style.display = "block";
+  // Here you can add your code to populate the selection box with options
+});
+
   function toastDispose(toast) {
     if (toast && toast._element !== null) {
       if (toastPlacementExample) {
